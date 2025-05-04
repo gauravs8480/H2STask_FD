@@ -43,6 +43,7 @@ const Hero = () => {
         <img
           src={header}
           alt="Hero Background"
+          loading="lazy"
           className="w-full h-full object-cover object-center md:mt-0"
         />
         <div className="absolute bottom-0 w-full h-32 bg-gradient-to-b from-transparent to-[#0a1e27] z-0" />
@@ -53,9 +54,9 @@ const Hero = () => {
 
       {/* Left Socials Box */}
       <div className="  socials-left absolute lg:left-8 xl:left-20 top-150 md:top-120 md:left-5 3xl:top-125 4xl:top-205  lg:top-180  xl:top-107 -translate-y-1/2 sm:flex flex-col lg:items-center lg:justify-between text-white  w-16 h-auto md:h-[100px] lg:h-[250px] 3xl:h-[300px] 4xl:h-[400px] py-6 md:py-6 lg:py-10 3xl:py-14 px-1">
-      <span className="lg:rotate-90 text-lg 4xl:text-3xl font-medium tracking-[2px] whitespace-nowrap ">
-  Follow us
-</span>
+        <span className="lg:rotate-90 text-lg 4xl:text-3xl font-medium tracking-[2px] whitespace-nowrap ">
+          Follow us
+        </span>
         <div className="flex   lg:flex-col gap-4  4xl:gap-16  lg:gap-8">
           <a href="#" className="text-lg md:text-xl 4xl:text-4xl">
             <RiInstagramLine />
